@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		034839F6286B1FC4008249B0 /* PictureFetchingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034839F5286B1FC4008249B0 /* PictureFetchingViewModel.swift */; };
+		034839FD286B292B008249B0 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034839FC286B292B008249B0 /* APIResponse.swift */; };
+		035E4C5F286AF9CB00B18EBA /* CustomPinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035E4C5E286AF9CB00B18EBA /* CustomPinterestLayout.swift */; };
+		038B6A882869FC740051455B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038B6A872869FC740051455B /* AppDelegate.swift */; };
+		038B6A8A2869FC740051455B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038B6A892869FC740051455B /* SceneDelegate.swift */; };
+		038B6A8F2869FC740051455B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 038B6A8D2869FC740051455B /* Main.storyboard */; };
+		038B6A912869FC740051455B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 038B6A902869FC740051455B /* Assets.xcassets */; };
+		038B6A942869FC740051455B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 038B6A922869FC740051455B /* LaunchScreen.storyboard */; };
+		03DA8BC8286B0476002FADBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038B6A8B2869FC740051455B /* ViewController.swift */; };
+		03DA8BCB286B0537002FADBB /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DA8BC9286B0537002FADBB /* CustomCollectionViewCell.swift */; };
+		03DA8BCC286B0537002FADBB /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03DA8BCA286B0537002FADBB /* CustomCollectionViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		034839F5286B1FC4008249B0 /* PictureFetchingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureFetchingViewModel.swift; sourceTree = "<group>"; };
+		034839FC286B292B008249B0 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		035E4C5E286AF9CB00B18EBA /* CustomPinterestLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPinterestLayout.swift; sourceTree = "<group>"; };
+		038B6A842869FC740051455B /* OscarPinterest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OscarPinterest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		038B6A872869FC740051455B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		038B6A892869FC740051455B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		038B6A8B2869FC740051455B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		038B6A8E2869FC740051455B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		038B6A902869FC740051455B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		038B6A932869FC740051455B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		038B6A952869FC740051455B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03DA8BC9286B0537002FADBB /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		03DA8BCA286B0537002FADBB /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		038B6A812869FC740051455B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034839FE286B2E16008249B0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				034839FC286B292B008249B0 /* APIResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		034839FF286B2E1F008249B0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				034839F5286B1FC4008249B0 /* PictureFetchingViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		03483A00286B2E96008249B0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				038B6A8B2869FC740051455B /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		03483A01286B2E9E008249B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				03483A03286B2EB3008249B0 /* CustomCollectionView */,
+				03483A02286B2EA4008249B0 /* Storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		03483A02286B2EA4008249B0 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				038B6A8D2869FC740051455B /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		03483A03286B2EB3008249B0 /* CustomCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				03483A04286B2ED5008249B0 /* ViewCell */,
+				035E4C5E286AF9CB00B18EBA /* CustomPinterestLayout.swift */,
+			);
+			path = CustomCollectionView;
+			sourceTree = "<group>";
+		};
+		03483A04286B2ED5008249B0 /* ViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				03DA8BC9286B0537002FADBB /* CustomCollectionViewCell.swift */,
+				03DA8BCA286B0537002FADBB /* CustomCollectionViewCell.xib */,
+			);
+			path = ViewCell;
+			sourceTree = "<group>";
+		};
+		038B6A7B2869FC740051455B = {
+			isa = PBXGroup;
+			children = (
+				038B6A862869FC740051455B /* OscarPinterest */,
+				038B6A852869FC740051455B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		038B6A852869FC740051455B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				038B6A842869FC740051455B /* OscarPinterest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		038B6A862869FC740051455B /* OscarPinterest */ = {
+			isa = PBXGroup;
+			children = (
+				03483A01286B2E9E008249B0 /* View */,
+				03483A00286B2E96008249B0 /* Controller */,
+				034839FE286B2E16008249B0 /* Model */,
+				034839FF286B2E1F008249B0 /* ViewModel */,
+				038B6A922869FC740051455B /* LaunchScreen.storyboard */,
+				038B6A872869FC740051455B /* AppDelegate.swift */,
+				038B6A892869FC740051455B /* SceneDelegate.swift */,
+				038B6A902869FC740051455B /* Assets.xcassets */,
+				038B6A952869FC740051455B /* Info.plist */,
+			);
+			path = OscarPinterest;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		038B6A832869FC740051455B /* OscarPinterest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 038B6A982869FC740051455B /* Build configuration list for PBXNativeTarget "OscarPinterest" */;
+			buildPhases = (
+				038B6A802869FC740051455B /* Sources */,
+				038B6A812869FC740051455B /* Frameworks */,
+				038B6A822869FC740051455B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OscarPinterest;
+			productName = OscarPinterest;
+			productReference = 038B6A842869FC740051455B /* OscarPinterest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		038B6A7C2869FC740051455B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					038B6A832869FC740051455B = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 038B6A7F2869FC740051455B /* Build configuration list for PBXProject "OscarPinterest" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 038B6A7B2869FC740051455B;
+			productRefGroup = 038B6A852869FC740051455B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				038B6A832869FC740051455B /* OscarPinterest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		038B6A822869FC740051455B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				038B6A942869FC740051455B /* LaunchScreen.storyboard in Resources */,
+				038B6A912869FC740051455B /* Assets.xcassets in Resources */,
+				038B6A8F2869FC740051455B /* Main.storyboard in Resources */,
+				03DA8BCC286B0537002FADBB /* CustomCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		038B6A802869FC740051455B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				034839FD286B292B008249B0 /* APIResponse.swift in Sources */,
+				03DA8BC8286B0476002FADBB /* ViewController.swift in Sources */,
+				03DA8BCB286B0537002FADBB /* CustomCollectionViewCell.swift in Sources */,
+				035E4C5F286AF9CB00B18EBA /* CustomPinterestLayout.swift in Sources */,
+				038B6A882869FC740051455B /* AppDelegate.swift in Sources */,
+				034839F6286B1FC4008249B0 /* PictureFetchingViewModel.swift in Sources */,
+				038B6A8A2869FC740051455B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		038B6A8D2869FC740051455B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				038B6A8E2869FC740051455B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		038B6A922869FC740051455B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				038B6A932869FC740051455B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		038B6A962869FC740051455B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		038B6A972869FC740051455B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		038B6A992869FC740051455B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OscarPinterest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oscorp.pinterest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		038B6A9A2869FC740051455B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OscarPinterest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oscorp.pinterest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		038B6A7F2869FC740051455B /* Build configuration list for PBXProject "OscarPinterest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				038B6A962869FC740051455B /* Debug */,
+				038B6A972869FC740051455B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		038B6A982869FC740051455B /* Build configuration list for PBXNativeTarget "OscarPinterest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				038B6A992869FC740051455B /* Debug */,
+				038B6A9A2869FC740051455B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 038B6A7C2869FC740051455B /* Project object */;
+}

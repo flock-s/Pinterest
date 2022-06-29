@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cec-NR-Gxf">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="dV7-Z3-Ppv">
+            <objects>
+                <navigationController id="cec-NR-Gxf" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MSe-ML-qP4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="aAD-da-nmX" kind="relationship" relationship="rootViewController" id="EaS-IK-T3s"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hi0-hh-CfU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-673" y="40"/>
+        </scene>
+        <!--Splash-->
+        <scene sceneID="WIK-CD-YGy">
+            <objects>
+                <viewController id="aAD-da-nmX" customClass="ViewController" customModule="OscarPinterest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ye9-wG-4hv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="hjz-3j-QWU">
+                                <rect key="frame" x="0.0" y="44" width="375" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="EBn-cx-ET7"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ukQ-s8-AfG">
+                                <rect key="frame" x="0.0" y="104" width="375" height="563"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FdS-rt-82e">
+                                <rect key="frame" x="0.0" y="104" width="375" height="563"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="HGg-QU-LXE">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="563"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zwT-rF-ElM">
+                                            <rect key="frame" x="8" y="8" width="359" height="547"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <collectionViewLayout key="collectionViewLayout" id="JzT-oi-OwA" customClass="CustomPinterestLayout" customModule="OscarPinterest" customModuleProvider="target"/>
+                                            <cells>
+                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="customCell" id="rEx-C9-fT5" customClass="CustomCollectionViewCell" customModule="OscarPinterest" customModuleProvider="target">
+                                                    <rect key="frame" x="55.5" y="0.0" width="248" height="372"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="BSm-ea-cxD">
+                                                        <rect key="frame" x="0.0" y="0.0" width="248" height="372"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                    </collectionViewCellContentView>
+                                                    <size key="customSize" width="248" height="372"/>
+                                                </collectionViewCell>
+                                            </cells>
+                                        </collectionView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="zwT-rF-ElM" firstAttribute="leading" secondItem="HGg-QU-LXE" secondAttribute="leadingMargin" id="P6N-mP-P2k"/>
+                                        <constraint firstItem="zwT-rF-ElM" firstAttribute="top" secondItem="HGg-QU-LXE" secondAttribute="topMargin" id="REt-mW-sPF"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="zwT-rF-ElM" secondAttribute="bottom" id="TT4-Jq-f84"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="zwT-rF-ElM" secondAttribute="trailing" id="xSw-xY-vC6"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wwn-jG-iMX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hjz-3j-QWU" firstAttribute="trailing" secondItem="wwn-jG-iMX" secondAttribute="trailing" id="AHn-je-NrG"/>
+                            <constraint firstItem="hjz-3j-QWU" firstAttribute="leading" secondItem="wwn-jG-iMX" secondAttribute="leading" id="DCJ-oU-361"/>
+                            <constraint firstItem="FdS-rt-82e" firstAttribute="width" secondItem="ukQ-s8-AfG" secondAttribute="width" id="G1E-4S-XPB"/>
+                            <constraint firstItem="ukQ-s8-AfG" firstAttribute="top" secondItem="hjz-3j-QWU" secondAttribute="bottom" id="GuS-Qb-XJo"/>
+                            <constraint firstItem="ukQ-s8-AfG" firstAttribute="leading" secondItem="wwn-jG-iMX" secondAttribute="leading" id="MaO-kv-PEQ"/>
+                            <constraint firstItem="wwn-jG-iMX" firstAttribute="trailing" secondItem="ukQ-s8-AfG" secondAttribute="trailing" id="UG8-6F-rdI"/>
+                            <constraint firstItem="hjz-3j-QWU" firstAttribute="top" secondItem="wwn-jG-iMX" secondAttribute="top" id="W2i-uR-6j7"/>
+                            <constraint firstItem="FdS-rt-82e" firstAttribute="centerY" secondItem="ukQ-s8-AfG" secondAttribute="centerY" id="Xa8-8y-Bes"/>
+                            <constraint firstItem="FdS-rt-82e" firstAttribute="height" secondItem="ukQ-s8-AfG" secondAttribute="height" id="cCS-lX-xJD"/>
+                            <constraint firstItem="wwn-jG-iMX" firstAttribute="bottom" secondItem="ukQ-s8-AfG" secondAttribute="bottom" id="dGK-UL-Wgu"/>
+                            <constraint firstItem="FdS-rt-82e" firstAttribute="centerX" secondItem="ukQ-s8-AfG" secondAttribute="centerX" id="mCv-GQ-kvX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Splash" id="E9I-PV-bWd"/>
+                    <connections>
+                        <outlet property="collectionView" destination="zwT-rF-ElM" id="d8r-d4-L3L"/>
+                        <outlet property="searchbar" destination="hjz-3j-QWU" id="V6C-t1-MJB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AAL-oE-c0o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="165.59999999999999" y="38.23088455772114"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
