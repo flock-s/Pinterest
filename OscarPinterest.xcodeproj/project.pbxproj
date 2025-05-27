@@ -18,6 +18,7 @@
 		03DA8BC8286B0476002FADBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038B6A8B2869FC740051455B /* ViewController.swift */; };
 		03DA8BCB286B0537002FADBB /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DA8BC9286B0537002FADBB /* CustomCollectionViewCell.swift */; };
 		03DA8BCC286B0537002FADBB /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03DA8BCA286B0537002FADBB /* CustomCollectionViewCell.xib */; };
+		0BD6D8C42DE5670300FD15C5 /* OTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD6D8C32DE5670300FD15C5 /* OTP.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		038B6A952869FC740051455B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03DA8BC9286B0537002FADBB /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		03DA8BCA286B0537002FADBB /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
+		0BD6D8C32DE5670300FD15C5 /* OTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTP.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 		038B6A862869FC740051455B /* OscarPinterest */ = {
 			isa = PBXGroup;
 			children = (
+				0BD6D8C22DE566F500FD15C5 /* Utils */,
 				03483A01286B2E9E008249B0 /* View */,
 				03483A00286B2E96008249B0 /* Controller */,
 				034839FE286B2E16008249B0 /* Model */,
@@ -136,6 +139,14 @@
 				038B6A952869FC740051455B /* Info.plist */,
 			);
 			path = OscarPinterest;
+			sourceTree = "<group>";
+		};
+		0BD6D8C22DE566F500FD15C5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0BD6D8C32DE5670300FD15C5 /* OTP.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +228,7 @@
 				038B6A882869FC740051455B /* AppDelegate.swift in Sources */,
 				034839F6286B1FC4008249B0 /* PictureFetchingViewModel.swift in Sources */,
 				038B6A8A2869FC740051455B /* SceneDelegate.swift in Sources */,
+				0BD6D8C42DE5670300FD15C5 /* OTP.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,7 +383,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -400,7 +412,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
